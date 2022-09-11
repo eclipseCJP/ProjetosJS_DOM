@@ -1,0 +1,26 @@
+.container{
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times;
+    border: 1px solid #0984e3;
+}
+button{
+    background-color:#0984e3;
+    border: none;
+    color:#dfe6e9 ;
+    font-size: 20px;
+    padding: 10px;
+    width: 50px;
+    border-radius: 10px;
+}
+#menos{
+    padding: 11px;
+}
+input{
+    text-align:center;
+    width: 100px;
+    padding: 10px;
+    border: none;
+}
