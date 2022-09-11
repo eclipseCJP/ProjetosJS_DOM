@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/churrascometro.css">
-    <title>Document</title>
+    <title>Churrascometro</title>
 </head>
 <body>
     <div class="container">
         <h1>Churrascometro</h1>
-        <form action="">
-            <input id="adultos" type="number" placeholder="Adultos"><br>
-            <input id="criancas" type="number" placeholder="crianças"><br>
-            <input id="duracao" type="number" placeholder="duração"><br>
-            <button>Calcular</button>
+        <form>
+            <input id="adultos" type="number" placeholder="Adultos">
+            <input id="criancas" type="number" placeholder="crianças">
+            <input id="duracao" type="number" placeholder="duração">
+            <button onclick="calcular()">Calcular</button>
         </form>
-        
+        <div id="resultado">
+
+        </div>
     </div>
     <script src="js/churrascometro.js"></script>
 </body>
