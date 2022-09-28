@@ -3,7 +3,7 @@ let display=document.getElementById("display");
 let posicao=document.getElementById("item2");
 let list=[];
 
-
+ 
 
 function ultimaPosition(){
     let itens=item.value;
