@@ -9,8 +9,12 @@
 <body>
     <div class="container">
         <input type="text" id="item">
-        <button onclick="ultimaPosition()" id="bnt"> ultima posicao</button>
-        <button onclick="primeiraPosition()" id="btn2">primeira posicao</button>
+        <button onclick="adicionarUltimaPosition()" id="bnt"> ultima posicao</button>
+        <button onclick="adicionarPrimeiraPosition()" id="btn2">primeira posicao</button>
+        <button onclick="removerUltimoElemento()" id="bnt3">remover ultimo elemento</button>
+        <input type="text" id="item3" placeholder="informe o item para alterar">
+        <button onclick="pesquisarItem()" id="bnt5">pesquisar</button>
+        <button onclick="alterarItem()" id="bnt4">alterar item</button>
         <input  type="text" id="item2" placeholder="escolha a posicao">
         <input onclick="escolherPosition()" type="submit" value="selecionar">
         <ul id="display"></ul>
