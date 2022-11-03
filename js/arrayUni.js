@@ -1,5 +1,6 @@
 let item=document.getElementById("item");
-let item2=document.getElementById("item3");
+let item3=document.getElementById("item3");
+let item4=document.getElementById("item4");
 let display=document.getElementById("display");
 let posicao=document.getElementById("item2");
 let list=[];
@@ -9,18 +10,13 @@ let list=[];
 function adicionarUltimaPosition(){
     let itens=item.value;
     list.push(itens);
-    display.innerHTML=`<li>[${list}]</li>`;
+    display.innerHTML=`[${list}]`;
 }
-
-
 function adicionarPrimeiraPosition(){
     let itens=item.value;
     list.unshift(itens);
     display.innerHTML=`<li>[${list}]</li>`;
-
 }
-
-
 function escolherPosition(){
     let position=parseInt(posicao.value);
     let itens=item.value;
@@ -29,37 +25,32 @@ function escolherPosition(){
    console.log(position)
 
 }
-
 function removerUltimoElemento(){
-   // let position=parseInt(posicao.value);
-    //let itens=item.value;
    let itens=list.pop();
    display.innerHTML=`<li>[${list}]</li>`;
    alert(`elemento removido:..${itens}`)
 
 }
-
-function alterarItem(){
-
-}
 function pesquisarItem(){
-    let itemPesquisado=item2.value;
-    achou=0;
-    for(i=0; i<list.length;i++){
-       if(itemPesquisado === list[i]){
-        //console.log(list[i]);
-        //break;
-        achou=1
-        if(achou == 1){
-            console.log("encontrado");
-        }else if(achou==0){
-            console.log("item nao encontrado");
-            break;
+    let itemAlterado=item3.value;
+    let achou;
+    for( i=0; i<list.length; i++){
+        if(itemAlterado===list[i]){
+            achou=i;
+            alert(`posicao${i}`);
         }
-       }
-      
+        
     }
+    return achou;
 }
+function alterarItem(){
+    let posicao=pesquisarItem();
+    let itemAlterado=item4.value;
+    list.splice(posicao,1,itemAlterado);
+    display.innerHTML=`[${list}]`;
+        
+}
+
 
 
 //1-METODO PUSH()
